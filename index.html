@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Dreamer</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Account &#8711;</button>
+        <div class="dropdown-content">
+          <a href="#">Username: <span id="userNameValue"></span></a>
+          <a href="#">Total Spent: <span id="totalspent"></span></a>
+          <a href="#">Logout</a>
+        </div>
+    </div>
+
+    <button id="login">Log In <hr> Register</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="userName">Username:</p> <input type="text" id="userName">
+            <p>Password</p> <input type="password">
+            <br>
+            <button id="logInBtn">Log In</button>
+        </div>
+    </div>
+
+    <h1>Movie Dreamer</h1>
+    <h2>Welcome to the site where you are always up to date with the latest movies.</h2>
+    <br>
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- https://www.youtube.com/watch?v=exb2ab72Xhs -->
+    <div class="container">  <!-- glavni container koji obuhvata sve  -->
+        
+            
+    
+         <div id="preporuceno"> <!-- preporucen film, koji stoji iznad ostalih, vecih dimenzija -->
+            <div class="image">
+                <img src="./img/northman.jpg" alt="Best-seller" class="image-img">
+                <div class="overlay">
+                    <button onclick="pokreniFilm(this)">&#9655; <br> Watch</button>
+                    <br>
+                    <p class="about-movie">From visionary director Robert Eggers comes The Northman,
+                     an action-filled epic that follows a young Viking prince on his quest to avenge his father's murder.</p>
+                     <a href="https://www.youtube.com/watch?v=oMSdFM12hOw" target="_blank">Movie Trailer</a>
+                </div>
+            </div>
+
+            <div class="text">
+                <h4>Recomended for You:</h4>
+                <h5>"The NorthMan"</h5>
+                <br><br><br><br><br>
+                <span>Rating:<b>&#10025; &#10025; &#10025; &#10025; &#10025;</b></span> <div class="cena">Price:<b >12</b>$</div>
+                <!-- <div class="cena">Cena:<b >120</b>$</div> -->
+            </div>
+            
+    </div>
+        <p class="podnaslov">Best movies in 2022:</p>
+
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <div class="ostalo" id="pojedinacni"> <!-- ostali filmovi, pojedinacni -->
+            <div class="zaseban-film">
+                <div class="little-image">
+                    <img src="./img/gold.jpg" alt="Movie Gold" class="little-image-img">
+                    <div class="little-overlay">
+                        <p>In the not too distant future, a drifter (Zac Efron) travelling through the desert discovers the largest gold nugget ever found. He must guard it from thieves amid harsh conditions and wild dogs while waiting for his partner to return.</p>
+                        <button onclick="posebanFilm(this)">&#9655; <br> Wattch</button>
+                        <a href="https://www.youtube.com/watch?v=9UHxMBhFy88" target="_blank">Movie Trailer</a>
+                    </div>
+                </div>
+                <h5>"Gold"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025; &#10025; &#10025;</b></span>
+                <div class="cena">Price:<b>7</b>$</div>
+            </div>
+
+            <div class="zaseban-film">
+                <div class="little-image">
+                    <img src="./img/lost-city.jpg" alt="Movie Gold" class="little-image-img">
+                    <div class="little-overlay">
+                        <p>A reclusive romance novelist on a book tour with her cover model gets swept up in a kidnapping attempt A reclusive romance novelist on a book tour with her cover model gets swept up in a kidnapping attempt that lands t jungle adventure.</p>
+                        <button onclick="posebanFilm(this)">&#9655;  <br> Watch</button>
+                        <a href="https://www.youtube.com/watch?v=nfKO9rYDmE8" target="_blank">Movie Trailer</a>
+                    </div>
+                </div>
+                <h5>"Lost City"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025; &#10025;</b></span>
+                <div class="cena">Price:<b>6</b>$</div>
+            </div>
+
+            <div class="zaseban-film">
+                <div class="little-image">
+                    <img src="./img/operation-fortune.jpg" alt="Operation Fortune" class="little-image-img">
+                    <div class="little-overlay">
+                        <p>Special agent Orson Fortune and his team of operatives recruit one of Hollywood's biggest movie stars to help them on an undercover mission when the sale of a deadly new weapons technology threatens to disrupt the world order.</p>
+                        <button onclick="posebanFilm(this)">&#9655;  <br> Watch</button>
+                        <a href="https://www.youtube.com/watch?v=W8Sqk1GcqxY" target="_blank">Movie Trailer</a>
+                    </div>
+                </div>
+                <h5>"Operation Fortune"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025; &#10025;</b></span>
+                <div class="cena">Price:<b>5</b>$</div>
+            </div>
+
+            <div class="zaseban-film">
+                <div class="little-image">
+                    <img src="./img/panama.jpg" alt="Panama" class="little-image-img">
+                    <div class="little-overlay">
+                        <p>An ex-marine is hired by a defense contractor to travel to Panama to complete an arms deal. In the process he becomes involved with the U.S. invasion of Panama, and learns an important lesson about the true nature of political power.</p>
+                        <button onclick="posebanFilm(this)">&#9655;  <br> Watch</button>
+                        <a href="https://www.youtube.com/watch?v=O_FWx79_GNs" target="_blank">Movie Trailer</a>
+                    </div>
+                </div>
+                <h5>"Panama"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025; &#10025; &#10025;</b></span>
+                <div class="cena">Price:<b>7</b>$</div>
+            </div>
+        </div>
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <p class="podnaslov">Free Movie:</p>
+
+    <div class="freeMovie">
+        <div class="besplatni"> <!--Ovo ce biti 6 besplatna filma-->
+            <div class="besplatan-film">
+                <div class="little-image">
+                    <img src="./img/infinite.jpg" alt="Infinite" class="little-image-img">
+                    <div class="little-overlay">
+                        <button onclick="pokreniFreeFilm(this)">&#9655; <br> Watch</button>
+                        <p>A man discovers that his hallucinations are actually visions from past lives.</p>
+                    </div>
+                </div>
+                <h5>"Infinite"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025;</b></span>
+            </div>
+        </div>
+
+        <div class="besplatni">
+            <div class="besplatan-film">
+                <div class="little-image">
+                    <img src="./img/sherni.jpg" alt="Sherni" class="little-image-img">
+                    <div class="little-overlay">
+                        <button onclick="pokreniFreeFilm(this)">&#9655; <br> Watch</button>
+                        <p>An upright Forest Officer who strives for balance in a world of man-animal conflict while she also seeks her true calling in a hostile environment.</p>
+                    </div>
+                </div>
+                <h5>"Sherni"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025; &#10025;</b></span>
+            </div>
+        </div>
+
+        <div class="besplatni">
+            <div class="besplatan-film">
+                <div class="little-image">
+                    <img src="./img/spider-man.jpg" alt="Spider-man" class="little-image-img">
+                    <div class="little-overlay">
+                        <button onclick="pokreniFreeFilm(this)">&#9655; <br> Watch</button>
+                        <p>With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</p>
+                    </div>
+                </div>
+                <h5>"Spider-Man"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025; &#10025;</b></span>
+            </div>
+        </div>
+
+        <div class="besplatni">
+            <div class="besplatan-film">
+                <div class="little-image">
+                    <img src="./img/the-colony.jpg" alt="The Colony" class="little-image-img">
+                    <div class="little-overlay">
+                        <button onclick="pokreniFreeFilm(this)">&#9655; <br> Watch</button>
+                        <p>Set in the distant future, a female astronaut, shipwrecked on the long-decimated Earth, must decide the fate of the wasteland's remaining populace.</p>
+                    </div>
+                </div>
+                <h5>"The Colony"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025;</b></span>
+            </div>
+        </div>
+
+        <div class="besplatni">
+            <div class="besplatan-film">
+                <div class="little-image">
+                    <img src="./img/warning.jpeg" alt="Warning" class="little-image-img">
+                    <div class="little-overlay">
+                        <button onclick="pokreniFreeFilm(this)">&#9655; <br> Watch</button>
+                        <p>The meaning of life explored through multiple interconnected lives set in the near future.</p>
+                    </div>
+                </div>
+                <h5>"Warning"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025;</b></span>
+            </div>
+        </div>
+
+        <div class="besplatni">
+            <div class="besplatan-film">
+                <div class="little-image">
+                    <img src="./img/zeros-and-ones.jpg" alt="Zeros and Ones" class="little-image-img">
+                    <div class="little-overlay">
+                        <button onclick="pokreniFreeFilm(this)">&#9655; <br> Watch</button>
+                        <p>An American soldier stationed in Rome with the Vatican blown up, embarks on a hero's journey to uncover and defend against an unknown enemy threatening the entire world.</p>
+                    </div>
+                </div>
+                <h5>"Zeros and Ones"</h5>
+                <span>Rating:<b>&#10025; &#10025; &#10025;</b></span>
+            </div>
+        </div>
+
+       
+    </div>
+</div>
+<footer>
+    I made this site as a kind of homework. I continue with the works. Mirko Saric &#174;. <br>
+    Ovaj sajt sam izradio kao jednu vrstu domaćeg zadatka. Nastavljam dalje sa radovima. Mirko Šarić &#174;.
+
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
